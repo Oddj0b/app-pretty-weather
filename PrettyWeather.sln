@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyWeather.UITest", "PrettyWeather.uitest\PrettyWeather.UITest\PrettyWeather.UITest.csproj", "{DBC1A750-124F-4F02-9B4A-393740E66A2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyWeather.UITest", "PrettyWeather.UITest\PrettyWeather.UITest.csproj", "{DBC1A750-124F-4F02-9B4A-393740E66A2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
