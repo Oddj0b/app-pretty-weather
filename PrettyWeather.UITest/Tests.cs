@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using NUnit.Framework;
+using PrettyWeather.UITest;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
