@@ -7,6 +7,8 @@ echo "Building UI test projects:"
 find $APPCENTER_SOURCE_DIRECTORY -regex '*.UITest.*\.csproj' -exec msbuild {} \;
 echo "Compiled projects to run UI tests:"
 find $APPCENTER_SOURCE_DIRECTORY -regex '*.bin.*UITest.*\.dll' -exec echo {} \;
+echo "Logging into App Center"
+appcenter login --token $APPCENTER_TOKEN
 echo "Running UI test in App Center Test:"
 appPath= find $APPCENTER_OUTPUT_DIRECTORY -regex '*.bin.*ipa' echo {} \;
 buildDir= find $APPCENTER_SOURCE_DIRECTORY -regex '*.bin.*UITest.*\' -exec echo{}
