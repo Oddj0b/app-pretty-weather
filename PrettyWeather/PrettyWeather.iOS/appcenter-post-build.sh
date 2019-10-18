@@ -4,7 +4,7 @@ echo "Found UI tests projects:"
 find $APPCENTER_SOURCE_DIRECTORY -regex '*.UITest.*\.csproj' -exec echo {} \;
 echo
 echo "Building UI test projects:"
-find $APPCENTER_SOURCE_DIRECTORY -regex '*.UITest.*\.csproj' -exec msbuild {} \;
+find $APPCENTER_SOURCE_DIRECTORY -name '*.UITest.csproj' -exec msbuild {} \;
 echo "Compiled projects to run UI tests:"
 find $APPCENTER_SOURCE_DIRECTORY -regex '*.bin.*UITest.*\.dll' -exec echo {} \;
 #echo "Running UI test in App Center Test:"
