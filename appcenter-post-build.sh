@@ -12,4 +12,4 @@ appcenter login --token $APPCENTER_TOKEN
 echo "Running UI test in App Center Test:"
 APPPATH=find $APPCENTER_OUTPUT_DIRECTORY -regex '*.bin.*ipa' echo {} \;
 BUILDDIR=find $APPCENTER_SOURCE_DIRECTORY -regex '*.bin.*UITest.*\' -exec echo {} \;
-appcenter test run uitest --app $APP_OWNER --devices $DEVICE_SET --test-series "$APPCENTER_BRANCH-$APPCENTER_TRIGGER" --locale $LOCALE --app-path $APPPATH --build-dir $BUILDDIR
+appcenter test run uitest --app $APP_OWNER --devices $DEVICE_SET --test-series "$APPCENTER_BRANCH-$APPCENTER_TRIGGER" --locale $LOCALE --app-path $APPPATH --build-dir $BUILDDIR --async
