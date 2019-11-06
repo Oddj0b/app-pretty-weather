@@ -22,13 +22,12 @@ namespace PrettyWeather.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-#if ENABLE_TEST_CLOUD
-Xamarin.Calabash.Start();
-#endif
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+#if DEBUG
+Xamarin.Calabash.Start();
+#endif
             return base.FinishedLaunching(app, options);
         }
     }
