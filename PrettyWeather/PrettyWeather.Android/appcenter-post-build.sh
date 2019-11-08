@@ -19,7 +19,7 @@ set -e
 ##
 
 
-if [[ "$APPCENTER_SOURCE_DIRECTORY" =~ \.UITest.csproj ]];
+if [[ "$APPCENTER_SOURCE_DIRECTORY" == *.UITest.csproj ]];
 then 
 	echo "Building UI test projects:"
 	find $APPCENTER_SOURCE_DIRECTORY -name '*.UITest.csproj' -exec msbuild {} \;
