@@ -29,13 +29,6 @@ else
 fi
 echo "Compiled projects to run UI tests:"
 find $APPCENTER_SOURCE_DIRECTORY -regex '*.bin.*UITest.*\.dll' -exec echo {} \;
-if [ -d $APPCENTER_OUTPUT_DIRECTORY]
-then
-	echo "App Center output directory exists"
-else
-	echo " App Center output directory does not exists"
-	exit 9999
-fi
 echo "Running test in App Center Test"
 APPPATH=$APPCENTER_OUTPUT_DIRECTORY/*.apk
 BUILDDIR=$APPCENTER_SOURCE_DIRECTORY/*.UITest/bin/Debug/
