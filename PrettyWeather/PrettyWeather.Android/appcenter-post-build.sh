@@ -19,7 +19,7 @@ set -e
 ##
 
 
-if find find $APPCENTER_SOURCE_DIRECTORY -name '*.UITest.csproj';
+if find $APPCENTER_SOURCE_DIRECTORY -name '*.UITest.csproj';
 then 
 	echo "Building UI test projects:"
 	find $APPCENTER_SOURCE_DIRECTORY -name '*.UITest.csproj' -exec msbuild {} \;
