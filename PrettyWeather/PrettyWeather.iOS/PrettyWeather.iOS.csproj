@@ -37,12 +37,7 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchHttpClientHandler></MtouchHttpClientHandler>
-    <AssemblyName></AssemblyName>
-    <PublicSign>false</PublicSign>
-    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
-    <NoWarn></NoWarn>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
@@ -66,9 +61,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Distribution: Villars Gimm (T2TBC34KR3)</CodesignKey>
+    <CodesignKey>Apple Development: Villars Gimm (3SP39D3J7F)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>dist-wildcard</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

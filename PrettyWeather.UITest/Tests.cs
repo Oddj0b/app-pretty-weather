@@ -35,9 +35,12 @@ namespace Prettyeather.UITest
         [Test]
         public void SeeMaxTemp()
         {
+            app.Screenshot("First screen");
             app.WaitForElement(c => c.Marked("SEATTLE"));
+            app.WaitForElement(c => c.Marked("Max Temp"), timeout: TimeSpan.FromMinutes(120));
             app.SwipeRightToLeft(c => c.Marked("Wind Speed"));
             app.WaitForElement(c => c.Marked("Max Temp"));
+            app.Screenshot("Swiped to Max Temp");
         }
     }
 }
