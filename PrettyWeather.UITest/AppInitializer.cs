@@ -25,17 +25,14 @@ namespace PrettyWeather.UITest
             {
                 return ConfigureApp
                     .Android
-                    // TODO: Update this path to point to your Android app and uncomment the
-                    // code if the app is not included in the solution.
-                    //.ApkFile ("../../../Droid/bin/Debug/xamarinforms.apk")
+                    //.ApkFile ("../../../Droid/bin/Debug/PrettyWeather.Android.app")
                     .StartApp();
             }
 
             return ConfigureApp
                 .iOS
-                // TODO: Update this path to point to your iOS app and uncomment the
-                // code if the app is not included in the solution.
-                //.AppBundle ("../../../iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
+                .AppBundle("../../../PrettyWeather/PrettyWeather.iOS/bin/iPhoneSimulator/Debug/PrettyWeather.iOS.app")
+                .DeviceIdentifier("741282D0-8F88-4F2C-BF8B-5F0114279870")
                 .StartApp();
         }
     }

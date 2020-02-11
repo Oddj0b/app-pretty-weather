@@ -30,6 +30,14 @@ namespace Prettyeather.UITest
         public void AppLaunches()
         {
             app.Screenshot("First screen.");
+            //app.Repl();
+        }
+        [Test]
+        public void SeeMaxTemp()
+        {
+            app.WaitForElement(c => c.Marked("SEATTLE"));
+            app.SwipeRightToLeft(c => c.Marked("Wind Speed"));
+            app.WaitForElement(c => c.Marked("Max Temp"));
         }
     }
 }

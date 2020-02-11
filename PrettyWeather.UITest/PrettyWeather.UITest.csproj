@@ -41,5 +41,19 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrettyWeather\PrettyWeather.Android\PrettyWeather.Android.csproj">
+      <Project>{6641CFA3-5305-49F7-B39D-6495FB9EDA9A}</Project>
+      <Name>PrettyWeather.Android</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\PrettyWeather\PrettyWeather.iOS\PrettyWeather.iOS.csproj">
+      <Project>{AEACAE92-8FE2-4E58-8394-93ABF8B0DC64}</Project>
+      <Name>PrettyWeather.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
