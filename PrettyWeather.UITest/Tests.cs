@@ -27,12 +27,14 @@ namespace Prettyeather.UITest
         }
 
         [Test]
+        [Category("Launch")]
         public void AppLaunches()
         {
             app.Screenshot("First screen.");
             //app.Repl();
         }
         [Test]
+        [Category("Critical")]
         public void SeeMaxTemp()
         {
             app.Screenshot("First screen");
